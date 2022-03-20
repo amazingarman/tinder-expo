@@ -299,4 +299,29 @@ export default StyleSheet.create({
   iconMenu: {
     alignItems: "center",
   },
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 20
+  },
+  modal: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: '#c10900',
+    justifyContent: 'center',
+    padding : 10,
+  },
+  text: {
+    color: '#fff',
+    fontSize: 20,
+    textAlign: 'center',
+  },
+  touchableButton: {
+    width: '70%',
+    padding: 10,
+    backgroundColor: '#f06292',
+    marginBottom: 10,
+    marginTop: 30,
+  },
 });
