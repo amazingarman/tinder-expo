@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, ImageBackground } from "react-native";
+import { View, ImageBackground, Alert, Modal, Text, Image } from "react-native";
 import CardStack, { Card } from "react-native-card-stack-swiper";
 import { City, Filters, CardItem } from "../components";
 import styles from "../assets/styles";
@@ -26,6 +26,7 @@ const Home = () => {
           ref={(newSwiper): void => setSwiper(newSwiper)}
         >
           {DEMO.map((item) => (
+            item.id==5?<Modal key={100}><Text>Hello World!</Text></Modal>:
             <Card key={item.id}>
               <CardItem
                 hasActions
