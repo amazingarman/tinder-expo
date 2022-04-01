@@ -28,7 +28,7 @@ const Home = () => {
           ref={(newSwiper): void => setSwiper(newSwiper)}
         >
           {DEMO.map((item) => (
-            item.id==5?
+            item.id==10?
             <View key={100} style={styles.container}>
               <Modal key={100} animationType={"slide"} transparent={false} visible={modalVisilbe} onRequestClose={() => { console.log("Modal has been closed.") }}>
                 <View style={styles.modal}>
